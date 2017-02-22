@@ -109,6 +109,7 @@ describe "Recipe App" do
       }
 
       post '/recipes', params
+      # binding.pry
       follow_redirect!
     end
     it "creates a new recipe and saves to the database" do 
